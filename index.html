@@ -16,13 +16,15 @@
             href="https://fonts.googleapis.com/css2?family=Bitter:wght@200;300;400;500;600&family=Hind+Siliguri:wght@300;400;500;600;700&family=Lato:wght@100;300;400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800&family=Questrial&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Sedgwick+Ave&family=Signika:wght@300;400;500;600;700&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     </head>
 
     <body>
 
         <section class="aaa" id="home">
-            <h1>Central Coffee</h1>
-            <h4>Bespoke organically-sourced coffee</h4>
+            <h1 data-aos="fade-up" data-aos-duration="900">Central Coffee</h1>
+            <h4 data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">Bespoke organically-sourced coffee</h4>
             <nav>
                 <div class="log"><a href="#home"><img src="./logo-central-coffee.png" alt=""></a></div>
                 <ul>
@@ -36,7 +38,7 @@
 
         <section class="bbb" id="about">
 
-            <div class="b1">
+            <div class="b1" data-aos="fade-up" data-aos-delay="100" data-aos-duration="900">
                 <h3>
                     About
                 </h3>
@@ -49,16 +51,20 @@
                     nisl ac, venenatis justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="b2">
-                <div class="card"><img src="./coffee-1580595_640.jpg" alt="">
+                <div class="card" data-aos="fade-left" data-aos-delay="600" data-aos-duration="900"><img
+                        src="./coffee-1580595_640.jpg" alt="">
                     <div class="abs">Meet.</div>
                 </div>
-                <div class="card"><img src="./people-2588594_640.jpg" alt="">
+                <div class="card" data-aos="fade-left" data-aos-delay="700" data-aos-duration="900"><img
+                        src="./people-2588594_640.jpg" alt="">
                     <div class="abs">Eat.</div>
                 </div>
-                <div class="card"><img src="./coffee-2714970_640.jpg" alt="">
+                <div class="card" data-aos="fade-left" data-aos-delay="800" data-aos-duration="900"><img
+                        src="./coffee-2714970_640.jpg" alt="">
                     <div class="abs">Drink.</div>
                 </div>
-                <div class="card"><img src="./coffee-2306471_640.jpg" alt="">
+                <div class="card" data-aos="fade-left" data-aos-delay="900" data-aos-duration="900"><img
+                        src="./coffee-2306471_640.jpg" alt="">
                     <div class="abs">Relax.</div>
                 </div>
 
@@ -67,7 +73,7 @@
         </section>
         <section class="ccc" id="menu">
 
-            <div class="c1">
+            <div class="c1" data-aos="fade-up" data-aos-delay="100" data-aos-duration="900">
                 <h3>
                     Menu
                 </h3>
@@ -80,7 +86,7 @@
                     nisl ac, venenatis justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="c2">
-                <div class="card">
+                <div class="card" data-aos="fade-right" data-aos-delay="600" data-aos-duration="900">
                     <h2>DRINKS</h2>
                     <img src="./withfood.jpg" alt="">
                     <p>
@@ -91,7 +97,7 @@
                         <span>Black tea</span>
                     </p>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-left" data-aos-delay="600" data-aos-duration="900">
                     <h2>FOOD</h2>
                     <img src="food-3249174_640.jpg" alt="">
                     <p>
@@ -108,19 +114,19 @@
         </section>
         <section class="ddd" id="location">
 
-            <div class="d1">
+            <div class="d1" data-aos="fade-in" data-aos-delay="100" data-aos-duration="900">
                 <h3>
                     Location
                 </h3>
 
             </div>
             <div class="d2">
-                <div class="map">
+                <div class="map" data-aos="fade-right" data-aos-delay="600" data-aos-duration="900">
 
                     <img src="./map.png" alt="">
 
                 </div>
-                <div class="maptxt">
+                <div class="maptxt" data-aos="fade-left" data-aos-delay="600" data-aos-duration="900">
                     <h2>HOURS</h2>
                     <div>
                         <p>Mon-Thurs -- 7am - 8pm</p>
@@ -137,6 +143,10 @@
         <footer>
             &copy; 2023 BassaacDev
         </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 
 </html>
