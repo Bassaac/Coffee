@@ -306,6 +306,10 @@ section.ccc .c2 .card p {
           align-items: center;
 }
 
+section.ccc .c2 .card p span {
+  text-align: center;
+}
+
 section.ccc .c2 .card img {
   width: 440px;
   height: 320px;
