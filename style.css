@@ -1,0 +1,414 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "bitter", serif;
+}
+
+section.aaa {
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.473)), to(rgba(0, 0, 0, 0.514))), url(./home.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.514)), url(./home.jpg);
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.aaa h1 {
+  font-size: 9.4vw;
+  color: white;
+  font-weight: 400;
+}
+
+@media (max-width: 500px) {
+  section.aaa h1 {
+    font-size: 12.4vw;
+  }
+}
+
+section.aaa h4 {
+  font-family: lato;
+  color: white;
+  font-size: 2.3vw;
+  font-weight: 900;
+}
+
+@media (max-width: 500px) {
+  section.aaa h4 {
+    font-size: 4vw;
+  }
+}
+
+section.aaa nav {
+  width: 100%;
+  height: 14vh;
+  background-color: #36384c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  z-index: 100;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.637);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.637);
+}
+
+@media (max-width: 400px) {
+  section.aaa nav {
+    padding: 0 10px;
+  }
+}
+
+section.aaa nav .logo {
+  width: 50px;
+}
+
+@media (max-width: 400px) {
+  section.aaa nav .logo {
+    width: 20px;
+  }
+}
+
+section.aaa nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 28%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+section.aaa nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  font-family: lato;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section.aaa nav ul li a:hover {
+  color: #94816a;
+}
+
+section.bbb {
+  padding: 9vw 13vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #e9dccd;
+  color: #36384c;
+}
+
+section.bbb h3 {
+  font-family: bitter;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+section.bbb p {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  font-family: lato;
+  line-height: 1.7;
+}
+
+section.bbb .b2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  row-gap: 13px;
+  -webkit-column-gap: 23px;
+          column-gap: 23px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+section.bbb .b2 .card {
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+section.bbb .b2 .card .abs {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #36384c7a;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-size: 1.2em;
+  font-family: lato;
+  display: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+section.bbb .b2 .card:hover .abs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+section.bbb .b2 .card img {
+  width: 180px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media (max-width: 792px) {
+  section.bbb .b2 .card img {
+    width: 460px;
+  }
+}
+
+@media (max-width: 730px) {
+  section.bbb .b2 .card img {
+    width: 70vw;
+  }
+}
+
+section.ccc {
+  padding: 9vw 13vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #36384c;
+  color: #ffffff;
+}
+
+section.ccc h3 {
+  font-family: bitter;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+section.ccc p {
+  margin-bottom: 30px;
+  font-size: 1.1em;
+  font-family: lato;
+  line-height: 1.8;
+}
+
+section.ccc .c2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.ccc .c2 .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.ccc .c2 .card h2 {
+  font-family: lato;
+  font-size: 1.3em;
+  letter-spacing: 1.9px;
+}
+
+section.ccc .c2 .card p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.ccc .c2 .card img {
+  width: 440px;
+  height: 320px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+@media (max-width: 576px) {
+  section.ccc .c2 .card img {
+    width: calc(440px / 1.2);
+    height: calc(320px / 1.2);
+  }
+}
+
+@media (max-width: 466px) {
+  section.ccc .c2 .card img {
+    width: 80vw;
+    height: 70vw;
+  }
+}
+
+section.ddd {
+  padding: 9vw 13vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #e9dccd;
+  color: #36384c;
+}
+
+section.ddd .d1 h3 {
+  font-size: 2.2em;
+  margin-bottom: 25px;
+}
+
+section.ddd .d2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: lato;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.ddd .d2 .map img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  width: 500px;
+}
+
+@media (max-width: 640px) {
+  section.ddd .d2 .map img {
+    width: 75vw;
+  }
+}
+
+section.ddd .d2 .maptxt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 90px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15px;
+}
+
+section.ddd .d2 .maptxt h2 {
+  letter-spacing: 1.8px;
+  font-size: 1.3em;
+}
+
+section.ddd .d2 .maptxt p {
+  font-size: 1.1em;
+}
+
+footer {
+  width: 100%;
+  height: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e9dccd;
+  color: #36384c;
+}
+/*# sourceMappingURL=style.css.map */
